@@ -1,0 +1,33 @@
+jwt:
+  secret: secrectkey123
+
+server:
+    port: 8081         
+    
+    
+spring:
+    application:
+           name: AppsNa_BULT_App_JWTService
+    data:
+        mongodb:
+             database: AppsNaBULTApp
+             host: localhost
+             port: 27017
+    mvc:
+      pathmatch: 
+             matching-strategy: ant-path-matcher            
+             
+eureka:
+     client:
+          service-url:
+                   defaultZone: http://localhost:8761/eureka/          
+                          
+logging:
+  file: 
+    path: /my-logs/app.log
+    name: log.txt  
+    
+data:
+   exception:
+          incmsg: Invalid Credentials!!
+            

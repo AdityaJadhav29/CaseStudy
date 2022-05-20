@@ -1,0 +1,40 @@
+data:
+   exception:
+          msg: Data Already Exists!!
+          dmsg: Data Doesnot Exists!!
+
+server:
+    port: 8084          
+    
+    
+spring:
+    application:
+           name: AppsNa_BULT_App_FTrainingService
+    data:
+        mongodb:
+             database: AppsNaBULTApp
+             host: localhost
+             port: 27017
+    mvc:
+       pathmatch: 
+            matching-strategy: ant-path-matcher             
+             
+             
+eureka:
+     client:
+          service-url:
+                   defaultZone: http://localhost:8761/eureka/          
+                          
+logging:
+  file: 
+    path: /my-logs/app.log
+    name: log.txt
+    
+    
+jwt:
+  secret: secrectkey123       
+  
+  
+
+ 
+                         

@@ -1,0 +1,10 @@
+eureka:
+   client:
+      registerWithEureka: false
+      fetchRegistry: false
+server:
+   port: 8761
+logging:
+  file: 
+    path: /my-logs/app.log
+    name: log.txt

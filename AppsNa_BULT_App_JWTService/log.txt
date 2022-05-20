@@ -1,0 +1,64 @@
+2022-05-17 17:29:00.276  INFO 8944 --- [restartedMain] c.cg.AppsNaBultAppJwtServiceApplication  : Starting AppsNaBultAppJwtServiceApplication using Java 17.0.2 on DESKTOP-7E98PTP with PID 8944 (C:\Users\adity\Documents\workspace-case-study\AppsNa_BULT_App_JWTService\target\classes started by adity in C:\Users\adity\Documents\workspace-case-study\AppsNa_BULT_App_JWTService)
+2022-05-17 17:29:00.280  INFO 8944 --- [restartedMain] c.cg.AppsNaBultAppJwtServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-05-17 17:29:00.335  INFO 8944 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-17 17:29:00.335  INFO 8944 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-17 17:29:01.183  INFO 8944 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-05-17 17:29:01.315  INFO 8944 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 1 MongoDB repository interfaces.
+2022-05-17 17:29:01.548  INFO 8944 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0c6949e3-0c56-372f-afb5-d6519272653f
+2022-05-17 17:29:02.062  INFO 8944 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-17 17:29:02.071  INFO 8944 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-17 17:29:02.071  INFO 8944 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-17 17:29:02.164  INFO 8944 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-17 17:29:02.165  INFO 8944 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1828 ms
+2022-05-17 17:29:02.278  INFO 8944 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-05-17 17:29:02.356  INFO 8944 --- [cluster-ClusterId{value='62838e067ae57e7bc4074e8d', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:40}] to localhost:27017
+2022-05-17 17:29:02.356  INFO 8944 --- [cluster-rtt-ClusterId{value='62838e067ae57e7bc4074e8d', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:41}] to localhost:27017
+2022-05-17 17:29:02.357  INFO 8944 --- [cluster-ClusterId{value='62838e067ae57e7bc4074e8d', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=30308100}
+2022-05-17 17:29:02.400  WARN 8944 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-17 17:29:02.453  WARN 8944 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-17 17:29:02.642  WARN 8944 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-05-17 17:29:03.075  INFO 8944 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-05-17 17:29:03.154  INFO 8944 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4519369b, org.springframework.security.web.context.SecurityContextPersistenceFilter@5968a29e, org.springframework.security.web.header.HeaderWriterFilter@139b8ac, org.springframework.web.filter.CorsFilter@116fbb6b, org.springframework.security.web.authentication.logout.LogoutFilter@5e6d9437, com.cg.filter.JWTFilter@2ab624c6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7fdcd331, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@fc01e34, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3bd911a2, org.springframework.security.web.session.SessionManagementFilter@5d88cbd2, org.springframework.security.web.access.ExceptionTranslationFilter@2e817b7d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@65054c13]
+2022-05-17 17:29:03.506  INFO 8944 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-05-17 17:29:03.736  WARN 8944 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-17 17:29:03.870  INFO 8944 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-05-17 17:29:03.995  INFO 8944 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-05-17 17:29:04.017  INFO 8944 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-17 17:29:04.080  INFO 8944 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-05-17 17:29:04.081  INFO 8944 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-05-17 17:29:04.081  INFO 8944 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-05-17 17:29:04.081  INFO 8944 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-05-17 17:29:04.081  INFO 8944 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-05-17 17:29:04.081  INFO 8944 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-05-17 17:29:04.082  INFO 8944 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-05-17 17:29:04.701  INFO 8944 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-05-17 17:29:04.708  INFO 8944 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-05-17 17:29:04.715  INFO 8944 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-17 17:29:04.727  INFO 8944 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1652788744726 with initial instances count: 2
+2022-05-17 17:29:04.729  INFO 8944 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application APPSNA_BULT_APP_JWTSERVICE with eureka with status UP
+2022-05-17 17:29:04.730  INFO 8944 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1652788744730, current=UP, previous=STARTING]
+2022-05-17 17:29:04.732  INFO 8944 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APPSNA_BULT_APP_JWTSERVICE/DESKTOP-7E98PTP:AppsNa_BULT_App_JWTService:8081: registering service...
+2022-05-17 17:29:04.762  INFO 8944 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-17 17:29:04.762  INFO 8944 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2022-05-17 17:29:04.778  INFO 8944 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APPSNA_BULT_APP_JWTSERVICE/DESKTOP-7E98PTP:AppsNa_BULT_App_JWTService:8081 - registration status: 204
+2022-05-17 17:29:04.871  INFO 8944 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-05-17 17:29:04.889  INFO 8944 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-05-17 17:29:04.920  INFO 8944 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-05-17 17:29:05.043  INFO 8944 --- [restartedMain] c.cg.AppsNaBultAppJwtServiceApplication  : Started AppsNaBultAppJwtServiceApplication in 5.369 seconds (JVM running for 6.188)
+2022-05-17 17:29:14.039  INFO 8944 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-17 17:29:14.039  INFO 8944 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-17 17:29:14.040  INFO 8944 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-17 17:29:14.167  INFO 8944 --- [http-nio-8081-exec-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:42}] to localhost:27017
+2022-05-17 17:29:14.194  WARN 8944 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cg.exception.Invalid_CredentialsException]
+2022-05-17 17:34:04.102  INFO 8944 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-17 17:39:04.118  INFO 8944 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-17 17:44:04.122  INFO 8944 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-17 17:49:04.129  INFO 8944 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-17 17:54:04.135  INFO 8944 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-17 17:59:04.141  INFO 8944 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-17 18:00:02.519  INFO 8944 --- [RMI TCP Connection(39)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-05-17 18:00:02.521  INFO 8944 --- [RMI TCP Connection(39)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application APPSNA_BULT_APP_JWTSERVICE with eureka with status DOWN
+2022-05-17 18:00:02.521  INFO 8944 --- [RMI TCP Connection(39)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1652790602521, current=DOWN, previous=UP]
+2022-05-17 18:00:02.521  INFO 8944 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APPSNA_BULT_APP_JWTSERVICE/DESKTOP-7E98PTP:AppsNa_BULT_App_JWTService:8081: registering service...
+2022-05-17 18:00:02.532  INFO 8944 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APPSNA_BULT_APP_JWTSERVICE/DESKTOP-7E98PTP:AppsNa_BULT_App_JWTService:8081 - registration status: 204
+2022-05-17 18:00:02.574  INFO 8944 --- [RMI TCP Connection(39)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
