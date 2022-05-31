@@ -1,5 +1,7 @@
 package com.cg.controller;
 
+
+import org.springframework.web.bind.annotation.CrossOrigin;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +21,8 @@ import com.cg.exception.DataDoesNotExistsException;
 import com.cg.model.TrainingModel;
 import com.cg.service.TrainingService;
 
+
+@CrossOrigin(origins= "http://localhost:3000")
 @RestController
 @RequestMapping("/api/train")
 public class EmployeeTrainingController {

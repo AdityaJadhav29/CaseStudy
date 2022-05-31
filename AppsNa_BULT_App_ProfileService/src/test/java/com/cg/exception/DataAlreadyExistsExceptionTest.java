@@ -75,6 +75,8 @@ class DataAlreadyExistsExceptionTest {
 	
 	assertThrows(DataAlreadyExistsException.class, ()->employeeProfileService.addEmployeeDetails(emp1),()->"Data Already Exists!!");
 	
+
+	
 	
 	}
 }

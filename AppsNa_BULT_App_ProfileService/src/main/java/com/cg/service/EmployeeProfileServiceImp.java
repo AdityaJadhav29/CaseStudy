@@ -52,6 +52,7 @@ public class EmployeeProfileServiceImp implements EmployeeProfileService {
 	public EmployeeModel updateEmployeeDetails(EmployeeModel uempd)throws DataDoesNotExistsException {
 		EmployeeModel record;
 		Optional<EmployeeModel> opt=repository.findById(uempd.getEmpId());
+		
 		if(opt.isPresent()) {
 			record=opt.get();
 			record.setEmpName(uempd.getEmpName());

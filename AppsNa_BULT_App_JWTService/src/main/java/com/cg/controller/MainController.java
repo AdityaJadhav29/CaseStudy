@@ -1,7 +1,7 @@
 package com.cg.controller;
 
 import java.util.List;
-
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,9 +22,8 @@ import com.cg.repository.UserRepositiory;
 import com.cg.service.UserAuthentication;
 import com.cg.utility.JWTUtility;
 
-
-@RequestMapping("/api/jwt")
 @RestController
+@RequestMapping("/api/jwt")
 public class MainController {
 
 	@Autowired
